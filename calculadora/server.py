@@ -34,6 +34,6 @@ while True:                # forever
     total = num1 / num2
     conn.send(str.encode(str(total))) # return division of two numbers sent by client
   else:
-    conn.send(str.encode('Não foi possivel realizar a equação')) # return division of two numbers sent by client
+    conn.send(str.encode('Não foi possivel realizar a equação')) # return message in case there is no equation to solve.
     break
 conn.close()               # close the connection
